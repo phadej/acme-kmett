@@ -1,0 +1,159 @@
+[submodule "lens"]
+	path = lens
+	url = git@github.com:ekmett/lens.git
+[submodule "keys"]
+	path = keys
+	url = git@github.com:ekmett/keys.git
+[submodule "hashable-extras"]
+	path = hashable-extras
+	url = git@github.com:ekmett/hashable-extras.git
+[submodule "ad"]
+	path = ad
+	url = git@github.com:ekmett/ad.git
+[submodule "approximate"]
+	path = approximate
+	url = git@github.com:ekmett/approximate.git
+[submodule "bits"]
+	path = bits
+	url = git@github.com:ekmett/bits.git
+[submodule "bound"]
+	path = bound
+	url = git@github.com:ekmett/bound.git
+[submodule "bytes"]
+	path = bytes
+	url = git@github.com:ekmett/bytes.git
+[submodule "comonad"]
+	path = comonad
+	url = git@github.com:ekmett/comonad.git
+[submodule "compensated"]
+	path = compensated
+	url = git@github.com:ekmett/compensated.git
+[submodule "distributive"]
+	path = distributive
+	url = git@github.com:ekmett/distributive.git
+[submodule "ersatz"]
+	path = ersatz
+	url = git@github.com:ekmett/ersatz.git
+[submodule "folds"]
+	path = folds
+	url = git@github.com:ekmett/folds.git
+[submodule "gc"]
+	path = gc
+	url = git@github.com:ekmett/gc.git
+[submodule "gl"]
+	path = gl
+	url = git@github.com:ekmett/gl.git
+[submodule "heaps"]
+	path = heaps
+	url = git@github.com:ekmett/heaps.git
+[submodule "hyperloglog"]
+	path = hyperloglog
+	url = git@github.com:ekmett/hyperloglog.git
+[submodule "hyphenation"]
+	path = hyphenation
+	url = git@github.com:ekmett/hyphenation.git
+[submodule "intervals"]
+	path = intervals
+	url = git@github.com:ekmett/intervals.git
+[submodule "lens-action"]
+	path = lens-action
+	url = git@github.com:ekmett/lens-action.git
+[submodule "lens-aeson"]
+	path = lens-aeson
+	url = git@github.com:lens/lens-aeson.git
+[submodule "log-domain"]
+	path = log-domain
+	url = git@github.com:ekmett/log-domain.git
+[submodule "linear"]
+	path = linear
+	url = git@github.com:ekmett/linear.git
+[submodule "linear-accelerate"]
+	path = linear-accelerate
+	url = git@github.com:ekmett/linear-accelerate.git
+[submodule "machines"]
+	path = machines
+	url = git@github.com:ekmett/machines.git
+[submodule "parsers"]
+	path = parsers
+	url = git@github.com:ekmett/parsers.git
+[submodule "rcu"]
+	path = rcu
+	url = git@github.com:ekmett/rcu.git
+[submodule "semigroupoids"]
+	path = semigroupoids
+	url = git@github.com:ekmett/semigroupoids.git
+[submodule "structs"]
+	path = structs
+	url = git@github.com:ekmett/structs.git
+[submodule "trifecta"]
+	path = trifecta
+	url = git@github.com:ekmett/trifecta.git
+[submodule "wl-pprint-terminfo"]
+	path = wl-pprint-terminfo
+	url = git@github.com:ekmett/wl-pprint-terminfo.git
+[submodule "zippers"]
+	path = zippers
+	url = git@github.com:ekmett/zippers.git
+[submodule "bifunctors"]
+	path = bifunctors
+	url = git@github.com:ekmett/bifunctors.git
+[submodule "profunctors"]
+	path = profunctors
+	url = git@github.com:ekmett/profunctors.git
+[submodule "adjunctions"]
+	path = adjunctions
+	url = git@github.com:ekmett/adjunctions.git
+[submodule "reflection"]
+	path = reflection
+	url = git@github.com:ekmett/reflection.git
+[submodule "constraints"]
+	path = constraints
+	url = git@github.com:ekmett/constraints.git
+[submodule "contravariant"]
+	path = contravariant
+	url = git@github.com:ekmett/contravariant.git
+[submodule "kan-extensions"]
+	path = kan-extensions
+	url = git@github.com:ekmett/kan-extensions.git
+[submodule "free"]
+	path = free
+	url = git@github.com:ekmett/free.git
+[submodule "pointed"]
+	path = pointed
+	url = git@github.com:ekmett/pointed.git
+[submodule "discrimination"]
+	path = discrimination
+	url = git@github.com:ekmett/discrimination.git
+[submodule "promises"]
+	path = promises
+	url = git@github.com:ekmett/promises.git
+[submodule "vector-instances"]
+	path = vector-instances
+	url = git@github.com:ekmett/vector-instances.git
+[submodule "x-vendor/safecopy"]
+	path = x-vendor/safecopy
+	url = git@github.com:acid-state/safecopy.git
+[submodule "x-vendor/hashtables"]
+	path = x-vendor/hashtables
+	url = git@github.com:gregorycollins/hashtables.git
+[submodule "x-vendor/hashable"]
+	path = x-vendor/hashable
+	url = git@github.com:tibbe/hashable.git
+[submodule "x-vendor/primitive"]
+	path = x-vendor/primitive
+	url = git@github.com:haskell/primitive.git
+[submodule "x-vendor/scientific"]
+	path = x-vendor/scientific
+	url = git@github.com:basvandijk/scientific.git
+[submodule "x-vendor/parallel"]
+	path = x-vendor/parallel
+	url = https://github.com/haskell/parallel
+[submodule "x-vendor/vector"]
+	path = x-vendor/vector
+	url = git@github.com:haskell/vector.git
+[submodule "x-vendor/integer-logarithms"]
+	path = x-vendor/integer-logarithms
+	url = git@github.com:Bodigrim/integer-logarithms.git
+[submodule "x-vendor/doctest"]
+	path = x-vendor/doctest
+	url = git@github.com:sol/doctest.git
