@@ -14,11 +14,11 @@ packages:
   compressed/
   constraints/
   contravariant/
-  discrimination/
+  -- discrimination/
   distributive/
   either/
   eq/
-  ersatz/
+  -- ersatz/
   eq/
   folds/
   free/

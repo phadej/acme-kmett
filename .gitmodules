@@ -163,3 +163,6 @@
 [submodule "wl-pprint-extras"]
 	path = wl-pprint-extras
 	url = git@github.com:ekmett/wl-pprint-extras.git
+[submodule "void"]
+	path = void
+	url = git@github.com:ekmett/void.git
