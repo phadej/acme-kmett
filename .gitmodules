@@ -166,3 +166,21 @@
 [submodule "void"]
 	path = void
 	url = git@github.com:ekmett/void.git
+[submodule "nats"]
+	path = nats
+	url = git@github.com:ekmett/nats.git
+[submodule "hybrid-vectors"]
+	path = hybrid-vectors
+	url = git@github.com:ekmett/hybrid-vectors.git
+[submodule "numeric-extras"]
+	path = numeric-extras
+	url = git@github.com:ekmett/numeric-extras.git
+[submodule "recursion-schemes"]
+	path = recursion-schemes
+	url = https://github.com/ekmett/recursion-schemes.git
+[submodule "zlib-lens"]
+	path = zlib-lens
+	url = git@github.com:ekmett/zlib-lens.git
+[submodule "prelude-extras"]
+	path = prelude-extras
+	url = https://github.com/ekmett/prelude-extras

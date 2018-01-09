@@ -26,6 +26,7 @@ packages:
 -- gl/
 -- hashable-extras/
   heaps/
+  hybrid-vectors/
   hyperloglog/
   hyphenation/
   intervals/
@@ -38,10 +39,14 @@ packages:
 --   -- linear-accelerate/
   log-domain/
   machines/
+  nats/
+  numeric-extras/
   parsers/
   pointed/
+  prelude-extras/
   profunctors/
-   promises/
+  promises/
+  recursion-schemes/
   reducers/
 --   -- rcu/
    reflection/
@@ -57,6 +62,7 @@ packages:
 -- TODO: not compatible with wl-pprint-extras-3.60
   wl-pprint-terminfo/
   zippers/
+  zlib-lens/
 
 -- TODO
 allow-newer:
@@ -64,6 +70,7 @@ allow-newer:
   ad:free
   adjunctions:free
   keys:free
+  recursion-schemes:free
 
   -- ansi-terminal-0.8
   ansi-wl-pprint:ansi-terminal
