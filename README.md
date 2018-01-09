@@ -7,7 +7,19 @@ git clone --recursive ...
 cabal new-build
 ```
 
+## Dependency graphs
+
+### GHC-8.2.2
+
+*Note:* aeson the only inplace dependency:
+
 ![deps](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.png)
+
+### GHC-7.8.4
+
+*Note:* without `discrimination` and `ersatz`
+
+![deps-7.8](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-7.8.png)
 
 ## Spells
 
@@ -15,11 +27,4 @@ cabal new-build
 
 ```bash
 packdeps */*.cabal
-```
-
-### run all doctests
-
-```bash
-cabal new-build --enable-tests --disable-benchmarks
-for exe in $(find dist-newstyle -type f -name doctests | sort); do echo '=====' $exe; $exe || echo '===== FAIL!'; done
 ```

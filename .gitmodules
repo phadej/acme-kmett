@@ -27,7 +27,7 @@
 	url = git@github.com:ekmett/comonad.git
 [submodule "compensated"]
 	path = compensated
-	url = git@github.com:ekmett/compensated.git
+	url = git@github.com:analytics/compensated.git
 [submodule "distributive"]
 	path = distributive
 	url = git@github.com:ekmett/distributive.git
@@ -130,30 +130,36 @@
 [submodule "vector-instances"]
 	path = vector-instances
 	url = git@github.com:ekmett/vector-instances.git
-[submodule "x-vendor/safecopy"]
-	path = x-vendor/safecopy
-	url = git@github.com:acid-state/safecopy.git
-[submodule "x-vendor/hashtables"]
-	path = x-vendor/hashtables
-	url = git@github.com:gregorycollins/hashtables.git
-[submodule "x-vendor/hashable"]
-	path = x-vendor/hashable
-	url = git@github.com:tibbe/hashable.git
-[submodule "x-vendor/primitive"]
-	path = x-vendor/primitive
-	url = git@github.com:haskell/primitive.git
-[submodule "x-vendor/scientific"]
-	path = x-vendor/scientific
-	url = git@github.com:basvandijk/scientific.git
-[submodule "x-vendor/parallel"]
-	path = x-vendor/parallel
-	url = https://github.com/haskell/parallel
-[submodule "x-vendor/vector"]
-	path = x-vendor/vector
-	url = git@github.com:haskell/vector.git
-[submodule "x-vendor/integer-logarithms"]
-	path = x-vendor/integer-logarithms
-	url = git@github.com:Bodigrim/integer-logarithms.git
-[submodule "x-vendor/doctest"]
-	path = x-vendor/doctest
-	url = git@github.com:sol/doctest.git
+[submodule "StateVar"]
+	path = StateVar
+	url = git@github.com:haskell-opengl/StateVar.git
+[submodule "algebra"]
+	path = algebra
+	url = git@github.com:ekmett/algebra.git
+[submodule "charset"]
+	path = charset
+	url = git@github.com:ekmett/charset.git
+[submodule "either"]
+	path = either
+	url = git@github.com:ekmett/either.git
+[submodule "eq"]
+	path = eq
+	url = git@github.com:ekmett/eq.git
+[submodule "semigroups"]
+	path = semigroups
+	url = git@github.com:ekmett/semigroups.git
+[submodule "tagged"]
+	path = tagged
+	url = git@github.com:ekmett/tagged.git
+[submodule "compressed"]
+	path = compressed
+	url = git@github.com:ekmett/compressed.git
+[submodule "ansi-wl-pprint"]
+	path = ansi-wl-pprint
+	url = git@github.com:ekmett/ansi-wl-pprint.git
+[submodule "reducers"]
+	path = reducers
+	url = git@github.com:ekmett/reducers.git
+[submodule "wl-pprint-extras"]
+	path = wl-pprint-extras
+	url = git@github.com:ekmett/wl-pprint-extras.git
