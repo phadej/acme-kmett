@@ -1,6 +1,11 @@
-.PHONY : deps.png deps-7.8.png
+.PHONY :
 
-deps.png : 
+all : cabal-7.8.4.project cabal-8.4.1.project
+
+with-ghc-8.4.1 : cabal-8.4.1.project
+	cabal new-build --project-file=cabal-8.4.1.project --builddir=.dist-newstyle-8.4.1 --disable-tests --disable-benchmarks all
+
+deps.png : cabal.project
 	cabal new-build -w ghc-8.2.2 --disable-tests --disable-benchmarks all --dry-run
 	cabal-plan --hide-builtin --hide-global dot --tred --tred-weights | dot -Tpng -odeps.png
 
@@ -10,4 +15,17 @@ deps-7.8.png : cabal-7.8.4.project
 
 # disable discrimination ersatz
 cabal-7.8.4.project : cabal.project
-	cat cabal.project | sed 's/discrimination/-- discrimination/' | sed 's/ersatz/-- ersatz/' > cabal-7.8.4.project
+	cat cabal.project \
+		| sed 's/discrimination/-- discrimination/' \
+		| sed 's/ersatz/-- ersatz/' \
+		> cabal-7.8.4.project
+
+cabal-8.4.1.project : cabal.project cabal-8.4.1.fragment
+	cat cabal.project \
+		| sed 's/ ad\//-- ad/' \
+		| sed 's/ersatz/-- ersatz/' \
+		| sed 's/hyphenation/-- hyphenation/' \
+		| sed 's/lens-action/-- lens-action/' \
+		| sed 's/zippers/-- zippers/' \
+		> cabal-8.4.1.project
+	cat cabal-8.4.1.fragment >> cabal-8.4.1.project

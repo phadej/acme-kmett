@@ -1,5 +1,7 @@
-dist-newstyle*
+dist-newstyle/
+.dist-newstyle-*
 .ghc.environment.*
 .stack-work/
 
 cabal-7.8.4.project
+cabal-8.4.1.project
