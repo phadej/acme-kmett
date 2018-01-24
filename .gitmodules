@@ -184,3 +184,6 @@
 [submodule "prelude-extras"]
 	path = prelude-extras
 	url = https://github.com/ekmett/prelude-extras
+[submodule "streams"]
+	path = streams
+	url = https://github.com/ekmett/streams

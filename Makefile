@@ -5,6 +5,9 @@ all : cabal-7.8.4.project cabal-8.4.1.project
 with-ghc-8.4.1 : cabal-8.4.1.project
 	cabal new-build --project-file=cabal-8.4.1.project --builddir=.dist-newstyle-8.4.1 --disable-tests --disable-benchmarks all
 
+with-ghc-8.4.1-test : cabal-8.4.1.project
+	cabal new-build --project-file=cabal-8.4.1.project --builddir=.dist-newstyle-8.4.1-test --enable-tests --disable-benchmarks all
+
 deps.png : cabal.project
 	cabal new-build -w ghc-8.2.2 --disable-tests --disable-benchmarks all --dry-run
 	cabal-plan --hide-builtin --hide-global dot --tred --tred-weights | dot -Tpng -odeps.png
