@@ -1,5 +1,5 @@
 packages:
-  -- ad/
+  ad/
   adjunctions/
   algebra/
   ansi-wl-pprint/
@@ -66,6 +66,23 @@ packages:
   zippers/
   zlib-lens/
 
+  concurrent-supply/
+  exceptions/
+  fixed/
+  graphs/
+  half/
+  integration/
+  intern/
+  lca/
+  lens/lens-properties/
+  monadic-arrays/
+  monad-products/
+  monad-st/
+  mtl/
+  semigroupoid-extras/
+  speculation/
+  unique/
+
 -- TODO
 allow-newer:
   -- free-5
@@ -73,6 +90,8 @@ allow-newer:
   adjunctions:free
   keys:free
   recursion-schemes:free
+
+  free:exceptions
 
   -- ansi-terminal-0.8
   hedgehog:ansi-terminal

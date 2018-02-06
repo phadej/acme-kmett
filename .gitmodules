@@ -177,13 +177,58 @@
 	url = git@github.com:ekmett/numeric-extras.git
 [submodule "recursion-schemes"]
 	path = recursion-schemes
-	url = https://github.com/ekmett/recursion-schemes.git
+	url = git@github.com:ekmett/recursion-schemes.git
 [submodule "zlib-lens"]
 	path = zlib-lens
 	url = git@github.com:ekmett/zlib-lens.git
 [submodule "prelude-extras"]
 	path = prelude-extras
-	url = https://github.com/ekmett/prelude-extras
+	url = git@github.com:ekmett/prelude-extras
 [submodule "streams"]
 	path = streams
-	url = https://github.com/ekmett/streams
+	url = git@github.com:ekmett/streams
+[submodule "exceptions"]
+	path = exceptions
+	url = git@github.com:ekmett/exceptions.git
+[submodule "concurrent-supply"]
+	path = concurrent-supply
+	url = git@github.com:ekmett/concurrent-supply.git
+[submodule "fixed"]
+	path = fixed
+	url = git@github.com:ekmett/fixed.git
+[submodule "graphs"]
+	path = graphs
+	url = git@github.com:ekmett/graphs.git
+[submodule "half"]
+	path = half
+	url = git@github.com:ekmett/half/
+[submodule "integration"]
+	path = integration
+	url = git@github.com:ekmett/integration
+[submodule "intern"]
+	path = intern
+	url = git@github.com:ekmett/intern
+[submodule "lca"]
+	path = lca
+	url = git@github.com:ekmett/lca.git
+[submodule "monadic-arrays"]
+	path = monadic-arrays
+	url = git@github.com:ekmett/monadic-arrays.git
+[submodule "monad-products"]
+	path = monad-products
+	url = git@github.com:ekmett/monad-products.git
+[submodule "monad-st"]
+	path = monad-st
+	url = git@github.com:ekmett/monad-st.git
+[submodule "mtl"]
+	path = mtl
+	url = git@github.com:ekmett/mtl.git
+[submodule "semigroupoid-extras"]
+	path = semigroupoid-extras
+	url = git@github.com:ekmett/semigroupoid-extras.git
+[submodule "speculation"]
+	path = speculation
+	url = git@github.com:ekmett/speculation.git
+[submodule "unique"]
+	path = unique
+	url = git@github.com:ekmett/unique.git

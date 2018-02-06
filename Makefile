@@ -19,6 +19,7 @@ deps-7.8.png : cabal-7.8.4.project
 # disable discrimination ersatz
 cabal-7.8.4.project : cabal.project
 	cat cabal.project \
+		| sed 's/half/-- half/' \
 		| sed 's/discrimination/-- discrimination/' \
 		| sed 's/ersatz/-- ersatz/' \
 		> cabal-7.8.4.project
