@@ -183,10 +183,10 @@
 	url = git@github.com:ekmett/zlib-lens.git
 [submodule "prelude-extras"]
 	path = prelude-extras
-	url = git@github.com:ekmett/prelude-extras
+	url = git@github.com:ekmett/prelude-extras.git
 [submodule "streams"]
 	path = streams
-	url = git@github.com:ekmett/streams
+	url = git@github.com:ekmett/streams.git
 [submodule "exceptions"]
 	path = exceptions
 	url = git@github.com:ekmett/exceptions.git
@@ -201,13 +201,13 @@
 	url = git@github.com:ekmett/graphs.git
 [submodule "half"]
 	path = half
-	url = git@github.com:ekmett/half/
+	url = git@github.com:ekmett/half.git
 [submodule "integration"]
 	path = integration
-	url = git@github.com:ekmett/integration
+	url = git@github.com:ekmett/integration.git
 [submodule "intern"]
 	path = intern
-	url = git@github.com:ekmett/intern
+	url = git@github.com:ekmett/intern.git
 [submodule "lca"]
 	path = lca
 	url = git@github.com:ekmett/lca.git
