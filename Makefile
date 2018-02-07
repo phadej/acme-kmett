@@ -33,3 +33,7 @@ cabal-8.4.1.project : cabal.project cabal-8.4.1.fragment
 		| sed 's/zippers/-- zippers/' \
 		> cabal-8.4.1.project
 	cat cabal-8.4.1.fragment >> cabal-8.4.1.project
+
+git-submodule-update :
+	git submodule foreach git checkout master
+	git submodule foreach git pull
