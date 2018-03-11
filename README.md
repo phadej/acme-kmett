@@ -19,6 +19,10 @@ cabal new-build
 
 ![deps](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.2.png)
 
+### GHC-8.0.2
+
+![deps](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.0.png)
+
 ### GHC-7.8.4
 
 *Note:* without `discrimination` and `ersatz`

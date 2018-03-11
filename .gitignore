@@ -4,4 +4,5 @@ dist-newstyle/
 .stack-work/
 
 cabal-7.8.4.project
+cabal-8.0.2.project
 cabal-8.4.1.project
