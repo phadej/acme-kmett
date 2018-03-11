@@ -33,6 +33,7 @@ deps-7.8.png : cabal-7.8.4.project
 # disable discrimination ersatz
 cabal-7.8.4.project : cabal.project
 	cat cabal.project \
+		| sed 's/ghc-8.2.2/ghc-7.8.4/' \
 		| sed 's/half/-- half/' \
 		| sed 's/discrimination/-- discrimination/' \
 		| sed 's/ersatz/-- ersatz/' \
@@ -40,11 +41,13 @@ cabal-7.8.4.project : cabal.project
 
 cabal-8.0.2.project : cabal.project
 	cat cabal.project \
+		| sed 's/ghc-8.2.2/ghc-8.0.2/' \
 		> cabal-8.0.2.project
 
 # note: we don't want to reinstall mtl
 cabal-8.4.1.project : cabal.project cabal-8.4.1.fragment
 	cat cabal.project \
+		| sed 's/ghc-8.2.2/ghc-8.4.1/' \
 		| sed 's/ ad\//-- ad/' \
 		| sed 's/ersatz/-- ersatz/' \
 		| sed 's/mtl/-- mtl/' \
