@@ -232,3 +232,6 @@
 [submodule "unique"]
 	path = unique
 	url = git@github.com:ekmett/unique.git
+[submodule "tagged-transformer"]
+	path = tagged-transformer
+	url = git@github.com:ekmett/tagged-transformer.git

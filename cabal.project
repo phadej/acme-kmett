@@ -57,6 +57,7 @@ packages:
   streams/
   -- structs/
   tagged/
+  tagged-transformer/
   trifecta/
   vector-instances/
   void/

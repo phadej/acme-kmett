@@ -9,11 +9,15 @@ cabal new-build
 
 ## Dependency graphs
 
+### GHC-8.4.1
+
+![deps-8.4](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.4.png)
+
 ### GHC-8.2.2
 
 *Note:* aeson the only inplace dependency:
 
-![deps](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.png)
+![deps](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.2.png)
 
 ### GHC-7.8.4
 
