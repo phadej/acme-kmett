@@ -235,3 +235,6 @@
 [submodule "tagged-transformer"]
 	path = tagged-transformer
 	url = git@github.com:ekmett/tagged-transformer.git
+[submodule "transformers-compat"]
+	path = transformers-compat
+	url = git@github.com:ekmett/transformers-compat.git

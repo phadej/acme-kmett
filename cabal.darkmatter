@@ -1,0 +1,119 @@
+-- compat packages
+packages:
+  contravariant/
+  nats/
+  semigroups/
+  tagged/
+  transformers-compat/
+  void/
+
+-- deprecated
+-- packages:
+--   hashable-extras/
+
+if impl(ghc >= 7.4)
+  -- lens
+  packages:
+    lens/
+
+    lens/lens-properties/
+    lens-aeson/
+    lens-action/
+    zlib-lens/
+
+    adjunctions/
+    bifunctors/
+    comonad/
+    distributive/
+    exceptions/
+    free/
+    kan-extensions/
+    reflection/
+    semigroupoids/
+    StateVar/
+
+    -- note: profunctors-5.3 requires GHC>=7.8
+
+  -- TODO:
+    -- gl/
+    -- linear-accelerate/
+    -- rcu/
+    -- structs/
+    -- TODO: not compatible with wl-pprint-extras-3.60
+    -- wl-pprint-terminfo/
+
+  -- others
+  packages:
+    ad/
+    algebra/
+    ansi-wl-pprint/
+    approximate/
+    bound/
+    bytes/
+    charset/
+    compensated/
+    compressed/
+    concurrent-supply/
+    either/
+    eq/
+    eq/
+    folds/
+    graphs/
+    heaps/
+    hybrid-vectors/
+    hyphenation/
+    integration/
+    intern/
+    intervals/
+    keys/
+    lca/
+    linear/
+    log-domain/
+    machines/
+    monad-products/
+    monad-st/
+    monadic-arrays/
+    numeric-extras/
+    parsers/
+    pointed/
+    prelude-extras/
+    recursion-schemes/
+    reducers/
+    speculation/
+    streams/
+    tagged-transformer/
+    transformers-compat/
+    trifecta/
+    unique/
+    vector-instances/
+    wl-pprint-extras/
+    zippers/
+
+if impl(ghc >= 7.10)
+  packages:
+    discrimination/
+    ersatz/
+    half
+
+if impl(ghc >= 7.8)
+  packages:
+    bits/
+    constraints/
+    fixed/
+    gc/
+    hyperloglog/
+    profunctors/
+
+  constraints:
+    transformers installed
+
+-- mtl-2.2 requires transformers >= 0.4
+-- GHC-7.8 bundles transformers-0.3.0.0
+if !impl(ghc == 7.8.*)
+  packages:
+    mtl/
+
+if impl(ghc >= 7.6)
+  packages:
+    promises/
+    semigroupoid-extras/

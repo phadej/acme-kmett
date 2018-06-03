@@ -1,0 +1,8 @@
+packages: contravariant/
+          nats/
+          semigroups/
+          tagged/
+          transformers-compat/
+          void/
+packages: mtl/
+with-compiler: ghc-7.0.4

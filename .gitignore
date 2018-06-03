@@ -1,5 +1,5 @@
 dist-newstyle/
-.dist-newstyle-*
+dist-newstyle-*
 .ghc.environment.*
 .stack-work/
 
