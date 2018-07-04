@@ -109,7 +109,7 @@ if impl(ghc >= 7.8)
 
 -- mtl-2.2 requires transformers >= 0.4
 -- GHC-7.8 bundles transformers-0.3.0.0
-if !impl(ghc == 7.8.*)
+if !impl(ghc == 7.8.*) && !impl(ghc == 8.6.1)
   packages:
     mtl/
 
@@ -142,7 +142,9 @@ if impl(ghc >= 8.6)
   -- Others
   allow-newer: parallel:containers
 
+  constraints: binary installed
   constraints: containers installed
-  constraints: stm installed
-  constraints: unix installed
   constraints: directory installed
+  constraints: stm installed
+  constraints: text installed
+  constraints: unix installed

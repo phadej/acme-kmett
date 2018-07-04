@@ -73,7 +73,6 @@ packages: bits/
           hyperloglog/
           profunctors/
 constraints: transformers installed
-packages: mtl/
 packages: promises/
           semigroupoid-extras/
 allow-newer: *:base
@@ -86,8 +85,10 @@ allow-newer: discrimination:containers
 allow-newer: speculation:stm
 allow-newer: wl-pprint-extras:containers
 allow-newer: parallel:containers
+constraints: binary installed
 constraints: containers installed
-constraints: stm installed
-constraints: unix installed
 constraints: directory installed
+constraints: stm installed
+constraints: text installed
+constraints: unix installed
 with-compiler: ghc-8.6.1
