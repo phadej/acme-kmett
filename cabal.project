@@ -81,7 +81,7 @@ packages:
   monadic-arrays/
   monad-products/
   monad-st/
-  mtl/
+  -- mtl/
   semigroupoid-extras/
   speculation/
   unique/

@@ -109,7 +109,7 @@ if impl(ghc >= 7.8)
 
 -- mtl-2.2 requires transformers >= 0.4
 -- GHC-7.8 bundles transformers-0.3.0.0
-if !impl(ghc == 7.8.*) && !impl(ghc == 8.6.1)
+if impl(ghc < 8.4) && !impl(ghc == 7.8.*)
   packages:
     mtl/
 

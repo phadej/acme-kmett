@@ -73,7 +73,6 @@ packages: bits/
           hyperloglog/
           profunctors/
 constraints: transformers installed
-packages: mtl/
 packages: promises/
           semigroupoid-extras/
 with-compiler: ghc-8.4.3
