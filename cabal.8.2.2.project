@@ -1,6 +1,5 @@
 packages: contravariant/
           nats/
-          semigroups/
           tagged/
           transformers-compat/
           void/

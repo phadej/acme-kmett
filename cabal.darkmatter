@@ -1,8 +1,10 @@
 -- compat packages
+
 packages:
   contravariant/
   nats/
-  semigroups/
+  -- TODO: semigroups-0.19
+  -- semigroups/
   tagged/
   transformers-compat/
   void/

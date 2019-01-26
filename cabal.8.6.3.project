@@ -1,6 +1,5 @@
 packages: contravariant/
           nats/
-          semigroups/
           tagged/
           transformers-compat/
           void/
@@ -75,4 +74,20 @@ packages: bits/
 constraints: transformers installed
 packages: promises/
           semigroupoid-extras/
-with-compiler: ghc-8.4.3
+allow-newer: *:base
+allow-newer: *:template-haskell
+allow-newer: StateVar:stm
+allow-newer: algebra:containers
+allow-newer: charset:containers
+allow-newer: compressed:containers
+allow-newer: discrimination:containers
+allow-newer: speculation:stm
+allow-newer: wl-pprint-extras:containers
+allow-newer: parallel:containers
+constraints: binary installed
+constraints: containers installed
+constraints: directory installed
+constraints: stm installed
+constraints: text installed
+constraints: unix installed
+with-compiler: ghc-8.6.3

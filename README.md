@@ -11,13 +11,13 @@ make build
 
 ## Dependency graphs
 
-### GHC-8.6.1
+### GHC-8.6.3
 
-![deps-8.6](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.8.6.1.png)
+![deps-8.6](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.8.6.3.png)
 
-### GHC-8.4.3
+### GHC-8.4.4
 
-![deps-8.4](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.8.4.3.png)
+![deps-8.4](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps.8.4.4.png)
 
 ### GHC-8.2.2
 
@@ -50,4 +50,11 @@ make build
 
 ```bash
 packdeps */*.cabal
+```
+
+### Update
+
+```bash
+git submodule foreach git checkout master
+git submodule foreach git pull
 ```
