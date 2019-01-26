@@ -1,8 +1,10 @@
 packages: contravariant/
           nats/
+          semigroups/
           tagged/
           transformers-compat/
           void/
+allow-newer: semigroups
 packages: lens/
           lens/lens-properties/
           lens-aeson/

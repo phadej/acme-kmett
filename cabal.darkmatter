@@ -3,11 +3,13 @@
 packages:
   contravariant/
   nats/
-  -- TODO: semigroups-0.19
-  -- semigroups/
+  semigroups/
   tagged/
   transformers-compat/
   void/
+
+-- TODO
+allow-newer: semigroups
 
 -- deprecated
 -- packages:
