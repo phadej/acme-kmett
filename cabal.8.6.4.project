@@ -92,4 +92,4 @@ constraints: directory installed
 constraints: stm installed
 constraints: text installed
 constraints: unix installed
-with-compiler: ghc-8.6.3
+with-compiler: ghc-8.6.4
