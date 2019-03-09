@@ -1,10 +1,31 @@
+allow-newer: ansi-wl-pprint:semigroups
+             hyphenation:semigroups
+             reflection:semigroups
+             profunctors:semigroups
+             constraints:semigroups
+             vector:semigroups
+allow-newer: algebra:containers
+             compressed:containers
+             wl-pprint-extras:containers
+allow-newer: charset:containers
+allow-newer: speculation:stm
+constraints: bytestring installed
+constraints: containers installed
+constraints: directory  installed
+constraints: filepath   installed
+constraints: pretty     installed
+constraints: process    installed
+constraints: time       installed
+constraints: unix       installed
+constraints: template-haskell installed
+constraints: deepseq installed
+constraints: transformers installed
 packages: contravariant/
           nats/
           semigroups/
           tagged/
           transformers-compat/
           void/
-allow-newer: semigroups
 packages: lens/
           lens/lens-properties/
           lens-aeson/
@@ -64,17 +85,16 @@ packages: ad/
           vector-instances/
           wl-pprint-extras/
           zippers/
-packages: discrimination/
-          ersatz/
-          half
+packages: mtl/
+packages: promises/
+          semigroupoid-extras/
 packages: bits/
           constraints/
           fixed/
           gc/
           hyperloglog/
           profunctors/
-constraints: transformers installed
-packages: mtl/
-packages: promises/
-          semigroupoid-extras/
+packages: discrimination/
+          ersatz/
+          half
 with-compiler: ghc-8.2.2
