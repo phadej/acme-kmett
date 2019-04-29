@@ -1,100 +1,116 @@
-allow-newer: ansi-wl-pprint:semigroups
-             hyphenation:semigroups
-             reflection:semigroups
-             profunctors:semigroups
-             constraints:semigroups
-             vector:semigroups
-allow-newer: algebra:containers
-             compressed:containers
-             wl-pprint-extras:containers
-allow-newer: charset:containers
-allow-newer: speculation:stm
-constraints: bytestring installed
-constraints: containers installed
-constraints: directory  installed
-constraints: filepath   installed
-constraints: pretty     installed
-constraints: process    installed
-constraints: time       installed
-constraints: unix       installed
-constraints: template-haskell installed
-constraints: deepseq installed
-constraints: transformers installed
-packages: contravariant/
-          nats/
-          semigroups/
-          tagged/
-          transformers-compat/
-          void/
-packages: lens/
-          lens/lens-properties/
-          lens-aeson/
-          lens-action/
-          zlib-lens/
-          adjunctions/
-          bifunctors/
-          comonad/
-          distributive/
-          exceptions/
-          free/
-          kan-extensions/
-          reflection/
-          semigroupoids/
-          StateVar/
-packages: ad/
-          algebra/
-          ansi-wl-pprint/
-          approximate/
-          bound/
-          bytes/
-          charset/
-          compensated/
-          compressed/
-          concurrent-supply/
-          either/
-          eq/
-          eq/
-          folds/
-          graphs/
-          heaps/
-          hybrid-vectors/
-          hyphenation/
-          integration/
-          intern/
-          intervals/
-          keys/
-          lca/
-          linear/
-          log-domain/
-          machines/
-          monad-products/
-          monad-st/
-          monadic-arrays/
-          numeric-extras/
-          parsers/
-          pointed/
-          prelude-extras/
-          recursion-schemes/
-          reducers/
-          speculation/
-          streams/
-          tagged-transformer/
-          transformers-compat/
-          trifecta/
-          unique/
-          vector-instances/
-          wl-pprint-extras/
-          zippers/
-packages: mtl/
-packages: promises/
-          semigroupoid-extras/
-packages: bits/
-          constraints/
-          fixed/
-          gc/
-          hyperloglog/
-          profunctors/
-packages: discrimination/
-          ersatz/
-          half
+allow-newer:
+    ansi-wl-pprint:semigroups
+    hyphenation:semigroups
+    reflection:semigroups
+    profunctors:semigroups
+    constraints:semigroups
+    vector:semigroups
+
+allow-newer:
+    algebra:containers
+    compressed:containers
+    wl-pprint-extras:containers
+
+allow-newer:   charset:containers
+allow-newer:   speculation:stm
+constraints:   bytestring installed
+constraints:   containers installed
+constraints:   directory  installed
+constraints:   filepath   installed
+constraints:   pretty     installed
+constraints:   process    installed
+constraints:   time       installed
+constraints:   unix       installed
+constraints:   template-haskell installed
+constraints:   deepseq installed
+constraints:   transformers installed
+packages:
+    contravariant/
+    nats/
+    semigroups/
+    tagged/
+    transformers-compat/
+    void/
+
+packages:
+    lens/
+    lens/lens-properties/
+    lens-aeson/
+    lens-action/
+    zlib-lens/
+    adjunctions/
+    bifunctors/
+    comonad/
+    distributive/
+    exceptions/
+    free/
+    kan-extensions/
+    reflection/
+    semigroupoids/
+    StateVar/
+
+packages:
+    ad/
+    algebra/
+    ansi-wl-pprint/
+    approximate/
+    bound/
+    bytes/
+    charset/
+    compensated/
+    compressed/
+    concurrent-supply/
+    either/
+    eq/
+    eq/
+    folds/
+    graphs/
+    heaps/
+    hybrid-vectors/
+    hyphenation/
+    integration/
+    intern/
+    intervals/
+    keys/
+    lca/
+    linear/
+    log-domain/
+    machines/
+    monad-products/
+    monad-st/
+    monadic-arrays/
+    numeric-extras/
+    parsers/
+    pointed/
+    prelude-extras/
+    recursion-schemes/
+    reducers/
+    speculation/
+    streams/
+    tagged-transformer/
+    transformers-compat/
+    trifecta/
+    unique/
+    vector-instances/
+    wl-pprint-extras/
+    zippers/
+
+packages:      mtl/
+packages:
+    promises/
+    semigroupoid-extras/
+
+packages:
+    bits/
+    constraints/
+    fixed/
+    gc/
+    hyperloglog/
+    profunctors/
+
+packages:
+    discrimination/
+    ersatz/
+    half
+
 with-compiler: ghc-8.2.2
