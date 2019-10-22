@@ -69,9 +69,16 @@ packages:
   transformers-compat/
   void/
 
+-- Packages which work with GHC-7.0.4
+------------------------------------------------------------------------------
+
 packages:
   bifunctors/
+  comonad/
+  distributive/
+  exceptions/
   semigroupoids/
+  StateVar/
 
 -- Deprecated packages
 ------------------------------------------------------------------------------
@@ -87,19 +94,14 @@ if impl(ghc >= 7.4)
   packages:
     lens/
 
-    lens/lens-properties/
-    lens-aeson/
-    lens-action/
-    zlib-lens/
-
     adjunctions/
-    comonad/
-    distributive/
-    exceptions/
     free/
     kan-extensions/
+    lens-action/
+    lens-aeson/
+    lens/lens-properties/
     reflection/
-    StateVar/
+    zlib-lens/
 
     -- note: profunctors-5.3 requires GHC>=7.8
 
@@ -124,7 +126,6 @@ if impl(ghc >= 7.4)
     compressed/
     concurrent-supply/
     either/
-    eq/
     eq/
     folds/
     graphs/

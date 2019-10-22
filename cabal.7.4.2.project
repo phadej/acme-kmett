@@ -34,22 +34,22 @@ packages:
 
 packages:
     bifunctors/
-    semigroupoids/
-
-packages:
-    lens/
-    lens/lens-properties/
-    lens-aeson/
-    lens-action/
-    zlib-lens/
-    adjunctions/
     comonad/
     distributive/
     exceptions/
+    semigroupoids/
+    StateVar/
+
+packages:
+    lens/
+    adjunctions/
     free/
     kan-extensions/
+    lens-action/
+    lens-aeson/
+    lens/lens-properties/
     reflection/
-    StateVar/
+    zlib-lens/
 
 packages:
     ad/
@@ -63,7 +63,6 @@ packages:
     compressed/
     concurrent-supply/
     either/
-    eq/
     eq/
     folds/
     graphs/
