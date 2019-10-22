@@ -69,6 +69,10 @@ packages:
   transformers-compat/
   void/
 
+packages:
+  bifunctors/
+  semigroupoids/
+
 -- Deprecated packages
 ------------------------------------------------------------------------------
 
@@ -89,14 +93,12 @@ if impl(ghc >= 7.4)
     zlib-lens/
 
     adjunctions/
-    bifunctors/
     comonad/
     distributive/
     exceptions/
     free/
     kan-extensions/
     reflection/
-    semigroupoids/
     StateVar/
 
     -- note: profunctors-5.3 requires GHC>=7.8

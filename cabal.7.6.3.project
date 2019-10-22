@@ -33,20 +33,22 @@ packages:
     void/
 
 packages:
+    bifunctors/
+    semigroupoids/
+
+packages:
     lens/
     lens/lens-properties/
     lens-aeson/
     lens-action/
     zlib-lens/
     adjunctions/
-    bifunctors/
     comonad/
     distributive/
     exceptions/
     free/
     kan-extensions/
     reflection/
-    semigroupoids/
     StateVar/
 
 packages:
