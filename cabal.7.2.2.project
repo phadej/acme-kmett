@@ -13,6 +13,7 @@ allow-newer:
 
 allow-newer:   charset:containers
 allow-newer:   speculation:stm
+constraints:   safecopy ^>=0.9.4.3
 constraints:   bytestring installed
 constraints:   containers installed
 constraints:   directory  installed

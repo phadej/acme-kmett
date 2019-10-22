@@ -13,6 +13,7 @@ allow-newer:
 
 allow-newer:   charset:containers
 allow-newer:   speculation:stm
+constraints:   safecopy ^>=0.10.0
 constraints:   bytestring installed
 constraints:   containers installed
 constraints:   directory  installed
@@ -71,7 +72,6 @@ packages:
     graphs/
     heaps/
     hybrid-vectors/
-    hyphenation/
     integration/
     intern/
     intervals/
@@ -93,13 +93,13 @@ packages:
     streams/
     tagged-transformer/
     transformers-compat/
-    trifecta/
     unique/
     vector-instances/
     wl-pprint-extras/
     zippers/
 
 packages:
+    hyphenation/
     promises/
     semigroupoid-extras/
 
@@ -110,6 +110,7 @@ packages:
     gc/
     hyperloglog/
     profunctors/
+    trifecta/
 
 packages:
     discrimination/

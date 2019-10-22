@@ -24,6 +24,13 @@ allow-newer:
 allow-newer:
   speculation:stm
 
+if impl(ghc >= 8.0)
+  constraints: safecopy ^>=0.10.0
+
+if !impl(ghc >= 8.0)
+  constraints: safecopy ^>=0.9.4.3
+
+
 -- CONSTRAINTS
 ------------------------------------------------------------------------------
 
@@ -121,7 +128,6 @@ if impl(ghc >= 7.4)
     graphs/
     heaps/
     hybrid-vectors/
-    hyphenation/
     integration/
     intern/
     intervals/
@@ -143,7 +149,6 @@ if impl(ghc >= 7.4)
     streams/
     tagged-transformer/
     transformers-compat/
-    trifecta/
     unique/
     vector-instances/
     wl-pprint-extras/
@@ -157,6 +162,7 @@ if impl(ghc < 8.4) && !impl(ghc == 7.8.*)
 
 if impl(ghc >= 7.6)
   packages:
+    hyphenation/
     promises/
     semigroupoid-extras/
 
@@ -168,6 +174,7 @@ if impl(ghc >= 7.8)
     gc/
     hyperloglog/
     profunctors/
+    trifecta/
 
 if impl(ghc >= 7.10)
   packages:
