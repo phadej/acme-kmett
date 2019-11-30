@@ -64,7 +64,6 @@ packages:
     bound/
     bytes/
     charset/
-    compensated/
     compressed/
     concurrent-supply/
     either/
@@ -79,7 +78,6 @@ packages:
     keys/
     lca/
     linear/
-    log-domain/
     machines/
     monad-products/
     monad-st/
@@ -117,5 +115,9 @@ packages:
     discrimination/
     ersatz/
     half
+
+packages:
+    compensated/
+    log-domain/
 
 with-compiler: ghc-8.6.5

@@ -60,7 +60,6 @@ packages:
     bound/
     bytes/
     charset/
-    compensated/
     compressed/
     concurrent-supply/
     either/
@@ -75,7 +74,6 @@ packages:
     keys/
     lca/
     linear/
-    log-domain/
     machines/
     monad-products/
     monad-st/

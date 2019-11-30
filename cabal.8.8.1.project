@@ -64,7 +64,6 @@ packages:
     bound/
     bytes/
     charset/
-    compensated/
     compressed/
     concurrent-supply/
     either/
@@ -79,7 +78,6 @@ packages:
     keys/
     lca/
     linear/
-    log-domain/
     machines/
     monad-products/
     monad-st/
@@ -117,6 +115,10 @@ packages:
     discrimination/
     ersatz/
     half
+
+packages:
+    compensated/
+    log-domain/
 
 repository head.hackage
     url:           http://head.hackage.haskell.org/
