@@ -1,16 +1,12 @@
-allow-newer:
-    ansi-wl-pprint:semigroups
-    hyphenation:semigroups
-    reflection:semigroups
-    profunctors:semigroups
-    constraints:semigroups
-    vector:semigroups
-
-allow-newer:
-    algebra:containers
-    compressed:containers
-    wl-pprint-extras:containers
-
+allow-newer:   ansi-wl-pprint:semigroups
+allow-newer:   hyphenation:semigroups
+allow-newer:   reflection:semigroups
+allow-newer:   profunctors:semigroups
+allow-newer:   constraints:semigroups
+allow-newer:   vector:semigroups
+allow-newer:   algebra:containers
+allow-newer:   compressed:containers
+allow-newer:   wl-pprint-extras:containers
 allow-newer:   charset:containers
 allow-newer:   speculation:stm
 constraints:   safecopy ^>=0.9.4.3

@@ -1,16 +1,12 @@
-allow-newer:
-    ansi-wl-pprint:semigroups
-    hyphenation:semigroups
-    reflection:semigroups
-    profunctors:semigroups
-    constraints:semigroups
-    vector:semigroups
-
-allow-newer:
-    algebra:containers
-    compressed:containers
-    wl-pprint-extras:containers
-
+allow-newer:   ansi-wl-pprint:semigroups
+allow-newer:   hyphenation:semigroups
+allow-newer:   reflection:semigroups
+allow-newer:   profunctors:semigroups
+allow-newer:   constraints:semigroups
+allow-newer:   vector:semigroups
+allow-newer:   algebra:containers
+allow-newer:   compressed:containers
+allow-newer:   wl-pprint-extras:containers
 allow-newer:   charset:containers
 allow-newer:   speculation:stm
 constraints:   safecopy ^>=0.10.0
@@ -46,13 +42,11 @@ packages:
     StateVar/
 
 packages:
-    lens/
     adjunctions/
     free/
     kan-extensions/
     lens-action/
     lens-aeson/
-    lens/lens-properties/
     reflection/
     zlib-lens/
 
@@ -108,9 +102,12 @@ packages:
     fixed/
     gc/
     hyperloglog/
+    lens/
+    lens/lens-properties/
     profunctors/
     trifecta/
 
+allow-newer:   *:lens
 packages:
     discrimination/
     ersatz/
@@ -120,18 +117,4 @@ packages:
     compensated/
     log-domain/
 
-repository head.hackage
-    url:           http://head.hackage.haskell.org/
-    secure:        True
-    root-keys:
-        07c59cb65787dedfaef5bd5f987ceb5f7e5ebf88b904bbd4c5cbdeb2ff71b740
-        2e8555dde16ebd8df076f1a8ef13b8f14c66bad8eafefd7d9e37d0ed711821fb
-        8f79fd2389ab2967354407ec852cbe73f2e8635793ac446d09461ffb99527f6e
-
-    key-threshold: 3
-
-allow-newer:   *:base
-allow-newer:   *:template-haskell
-allow-newer:   *:time
-allow-newer:   *:Cabal
-with-compiler: ghc-8.8.1
+with-compiler: ghc-8.10.3

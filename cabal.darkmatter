@@ -2,27 +2,23 @@
 ------------------------------------------------------------------------------
 
 -- semigroups-0.19 to be released
-allow-newer:
-  ansi-wl-pprint:semigroups
-  hyphenation:semigroups
-  reflection:semigroups
-  profunctors:semigroups
-  constraints:semigroups
-  vector:semigroups
+allow-newer: ansi-wl-pprint:semigroups
+allow-newer: hyphenation:semigroups
+allow-newer: reflection:semigroups
+allow-newer: profunctors:semigroups
+allow-newer: constraints:semigroups
+allow-newer: vector:semigroups
 
 -- containers:0.6
-allow-newer:
-  algebra:containers
-  compressed:containers
-  wl-pprint-extras:containers
+allow-newer: algebra:containers
+allow-newer: compressed:containers
+allow-newer: wl-pprint-extras:containers
 
 -- this is revised on Hackage
-allow-newer:
-  charset:containers
+allow-newer: charset:containers
 
 -- stm-2.5
-allow-newer:
-  speculation:stm
+allow-newer: speculation:stm
 
 if impl(ghc >= 8.0)
   constraints: safecopy ^>=0.10.0
@@ -90,16 +86,12 @@ packages:
 ------------------------------------------------------------------------------
 
 if impl(ghc >= 7.4)
-  -- lens
   packages:
-    lens/
-
     adjunctions/
     free/
     kan-extensions/
     lens-action/
     lens-aeson/
-    lens/lens-properties/
     reflection/
     zlib-lens/
 
@@ -174,8 +166,12 @@ if impl(ghc >= 7.8)
     fixed/
     gc/
     hyperloglog/
+    lens/
+    lens/lens-properties/
     profunctors/
     trifecta/
+
+  allow-newer: *:lens
 
 if impl(ghc >= 7.10)
   packages:
@@ -188,7 +184,7 @@ if impl(ghc >= 8.0)
     compensated/
     log-domain/
 
-if impl(ghc >= 8.8)
+if impl(ghc >= 9.0)
   repository head.hackage
      url: http://head.hackage.haskell.org/
      secure: True

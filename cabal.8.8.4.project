@@ -9,7 +9,7 @@ allow-newer:   compressed:containers
 allow-newer:   wl-pprint-extras:containers
 allow-newer:   charset:containers
 allow-newer:   speculation:stm
-constraints:   safecopy ^>=0.9.4.3
+constraints:   safecopy ^>=0.10.0
 constraints:   bytestring installed
 constraints:   containers installed
 constraints:   directory  installed
@@ -21,6 +21,10 @@ constraints:   unix       installed
 constraints:   template-haskell installed
 constraints:   deepseq installed
 constraints:   transformers installed
+constraints:   mtl    installed
+constraints:   parsec installed
+constraints:   text   installed
+constraints:   stm    installed
 packages:
     contravariant/
     nats/
@@ -87,7 +91,6 @@ packages:
     wl-pprint-extras/
     zippers/
 
-packages:      mtl/
 packages:
     hyphenation/
     promises/
@@ -110,4 +113,8 @@ packages:
     ersatz/
     half
 
-with-compiler: ghc-7.10.3
+packages:
+    compensated/
+    log-domain/
+
+with-compiler: ghc-8.8.4
