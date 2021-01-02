@@ -1,21 +1,9 @@
 -- TODO
 ------------------------------------------------------------------------------
 
--- semigroups-0.19 to be released
-allow-newer: ansi-wl-pprint:semigroups
-allow-newer: hyphenation:semigroups
-allow-newer: reflection:semigroups
-allow-newer: profunctors:semigroups
-allow-newer: constraints:semigroups
-allow-newer: vector:semigroups
-
 -- containers:0.6
-allow-newer: algebra:containers
 allow-newer: compressed:containers
 allow-newer: wl-pprint-extras:containers
-
--- this is revised on Hackage
-allow-newer: charset:containers
 
 -- stm-2.5
 allow-newer: speculation:stm
@@ -144,8 +132,14 @@ if impl(ghc >= 7.4)
     transformers-compat/
     unique/
     vector-instances/
-    wl-pprint-extras/
     zippers/
+
+  -- https://matrix.hackage.haskell.org/#/package/wl-pprint-extras
+  if impl(ghc <8.8)
+    packages: wl-pprint-extras/
+
+  allow-newer: compressed:hashable
+  allow-newer: unique:hashable
 
 -- mtl-2.2 requires transformers >= 0.4
 -- GHC-7.8 bundles transformers-0.3.0.0

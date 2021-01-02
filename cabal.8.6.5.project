@@ -1,13 +1,5 @@
-allow-newer:   ansi-wl-pprint:semigroups
-allow-newer:   hyphenation:semigroups
-allow-newer:   reflection:semigroups
-allow-newer:   profunctors:semigroups
-allow-newer:   constraints:semigroups
-allow-newer:   vector:semigroups
-allow-newer:   algebra:containers
 allow-newer:   compressed:containers
 allow-newer:   wl-pprint-extras:containers
-allow-newer:   charset:containers
 allow-newer:   speculation:stm
 constraints:   safecopy ^>=0.10.0
 constraints:   bytestring installed
@@ -88,9 +80,11 @@ packages:
     transformers-compat/
     unique/
     vector-instances/
-    wl-pprint-extras/
     zippers/
 
+packages:      wl-pprint-extras/
+allow-newer:   compressed:hashable
+allow-newer:   unique:hashable
 packages:
     hyphenation/
     promises/
