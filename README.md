@@ -11,9 +11,13 @@ make build
 
 ## Dependency graphs
 
-### GHC-8.8.1
+### GHC-8.10.3
 
-![deps-8.8](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.8.1.png)
+![deps-8.10](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.10.3.png)
+
+### GHC-8.8.4
+
+![deps-8.8](https://raw.githubusercontent.com/phadej/acme-kmett/master/deps-8.8.4.png)
 
 ### GHC-8.6.5
 
