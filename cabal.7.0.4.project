@@ -27,5 +27,4 @@ packages:
     semigroupoids/
     StateVar/
 
-packages:      mtl/
 with-compiler: ghc-7.0.4

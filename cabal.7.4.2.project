@@ -38,7 +38,6 @@ packages:
     zlib-lens/
 
 packages:
-    ad/
     algebra/
     ansi-wl-pprint/
     approximate/
@@ -80,5 +79,4 @@ packages:
 packages:      wl-pprint-extras/
 allow-newer:   compressed:hashable
 allow-newer:   unique:hashable
-packages:      mtl/
 with-compiler: ghc-7.4.2

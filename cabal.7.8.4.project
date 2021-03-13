@@ -39,7 +39,6 @@ packages:
     zlib-lens/
 
 packages:
-    ad/
     algebra/
     ansi-wl-pprint/
     approximate/

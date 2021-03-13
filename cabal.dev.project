@@ -1,7 +1,15 @@
+allow-newer:   ansi-wl-pprint:semigroups
+allow-newer:   hyphenation:semigroups
+allow-newer:   reflection:semigroups
+allow-newer:   profunctors:semigroups
+allow-newer:   constraints:semigroups
+allow-newer:   vector:semigroups
+allow-newer:   algebra:containers
 allow-newer:   compressed:containers
 allow-newer:   wl-pprint-extras:containers
+allow-newer:   charset:containers
 allow-newer:   speculation:stm
-constraints:   safecopy ^>=0.10.0
+constraints:   safecopy ^>=0.10.3.1
 constraints:   bytestring installed
 constraints:   containers installed
 constraints:   directory  installed
@@ -13,6 +21,10 @@ constraints:   unix       installed
 constraints:   template-haskell installed
 constraints:   deepseq installed
 constraints:   transformers installed
+constraints:   mtl    installed
+constraints:   parsec installed
+constraints:   text   installed
+constraints:   stm    installed
 packages:
     contravariant/
     nats/
@@ -25,7 +37,7 @@ packages:
     bifunctors/
     comonad/
     distributive/
-    exceptions/
+    -- exceptions/
     semigroupoids/
     StateVar/
 
@@ -39,6 +51,7 @@ packages:
     zlib-lens/
 
 packages:
+    ad/
     algebra/
     ansi-wl-pprint/
     approximate/
@@ -77,7 +90,6 @@ packages:
     vector-instances/
     zippers/
 
-packages:      wl-pprint-extras/
 allow-newer:   compressed:hashable
 allow-newer:   unique:hashable
 packages:
@@ -91,7 +103,7 @@ packages:
     fixed/
     gc/
     hyperloglog/
-    lens/
+    -- lens/
     lens/lens-properties/
     profunctors/
     trifecta/
@@ -99,12 +111,26 @@ packages:
 allow-newer:   *:lens
 packages:
     discrimination/
-    ersatz/
+    -- ersatz/
     half
 
 packages:
-    ad/
     compensated/
     log-domain/
 
-with-compiler: ghc-8.0.2
+with-compiler: ghc-9.0.0.20201227
+
+repository head.hackage
+   url: http://ghc.gitlab.haskell.org/head.hackage/
+   secure: True
+   root-keys: 7541f32a4ccca4f97aea3b22f5e593ba2c0267546016b992dfadcd2fe944e55d
+              26021a13b401500c8eb2761ca95c61f2d625bfef951b939a8124ed12ecf07329
+              f76d08be13e9a61a377a85e2fb63f4c5435d40f8feb3e12eb05905edb8cdea89
+   key-threshold: 3
+
+allow-newer: *:base
+allow-newer: *:template-haskell
+allow-newer: *:Cabal
+allow-newer: *:ghc
+allow-newer: *:ghc-prim
+allow-newer: *:integer-gmp

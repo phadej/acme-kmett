@@ -43,7 +43,6 @@ packages:
     zlib-lens/
 
 packages:
-    ad/
     algebra/
     ansi-wl-pprint/
     approximate/
@@ -108,6 +107,7 @@ packages:
     half
 
 packages:
+    ad/
     compensated/
     log-domain/
 

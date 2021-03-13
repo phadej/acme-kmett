@@ -1,3 +1,11 @@
+makefile:
+  git-update:
+    git submodule foreach git checkout master
+    git submodule foreach git pull
+
+  cabal-deps:
+    cabal-deps */*.cabal */*/*.cabal
+
 -- TODO
 ------------------------------------------------------------------------------
 
@@ -95,7 +103,6 @@ if impl(ghc >= 7.4)
 
   -- others
   packages:
-    ad/
     algebra/
     ansi-wl-pprint/
     approximate/
@@ -143,9 +150,10 @@ if impl(ghc >= 7.4)
 
 -- mtl-2.2 requires transformers >= 0.4
 -- GHC-7.8 bundles transformers-0.3.0.0
-if impl(ghc < 8.4) && !impl(ghc == 7.8.*)
-  packages:
-    mtl/
+-- no mtl for now.
+-- if impl(ghc < 8.4) && !impl(ghc == 7.8.*)
+--   packages:
+--     mtl/
 
 if impl(ghc >= 7.6)
   packages:
@@ -175,19 +183,21 @@ if impl(ghc >= 7.10)
 
 if impl(ghc >= 8.0)
   packages:
+    ad/
     compensated/
     log-domain/
 
-if impl(ghc >= 9.0)
-  repository head.hackage
-     url: http://head.hackage.haskell.org/
-     secure: True
-     root-keys: 07c59cb65787dedfaef5bd5f987ceb5f7e5ebf88b904bbd4c5cbdeb2ff71b740
-                2e8555dde16ebd8df076f1a8ef13b8f14c66bad8eafefd7d9e37d0ed711821fb
-                8f79fd2389ab2967354407ec852cbe73f2e8635793ac446d09461ffb99527f6e
-     key-threshold: 3
-
-  allow-newer: *:base
-  allow-newer: *:template-haskell
-  allow-newer: *:time
-  allow-newer: *:Cabal
+-- if impl(ghc >= 9.1)
+--   repository head.hackage
+--      url: http://ghc.gitlab.haskell.org/head.hackage/
+--      secure: True
+--      root-keys: 7541f32a4ccca4f97aea3b22f5e593ba2c0267546016b992dfadcd2fe944e55d
+--                 26021a13b401500c8eb2761ca95c61f2d625bfef951b939a8124ed12ecf07329
+--                 f76d08be13e9a61a377a85e2fb63f4c5435d40f8feb3e12eb05905edb8cdea89
+--      key-threshold: 3
+--
+--   allow-newer: *:base
+--   allow-newer: *:ghc-prim
+--   allow-newer: *:template-haskell
+--   allow-newer: *:time
+--   allow-newer: *:Cabal

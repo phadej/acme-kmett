@@ -13,6 +13,10 @@ constraints:   unix       installed
 constraints:   template-haskell installed
 constraints:   deepseq installed
 constraints:   transformers installed
+constraints:   mtl    installed
+constraints:   parsec installed
+constraints:   text   installed
+constraints:   stm    installed
 packages:
     contravariant/
     nats/
@@ -77,7 +81,6 @@ packages:
     vector-instances/
     zippers/
 
-packages:      wl-pprint-extras/
 allow-newer:   compressed:hashable
 allow-newer:   unique:hashable
 packages:
@@ -107,4 +110,4 @@ packages:
     compensated/
     log-domain/
 
-with-compiler: ghc-8.0.2
+with-compiler: ghc-9.0.1
